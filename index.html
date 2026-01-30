@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deriv Web Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Deriv Trading Bot (Licensed)</h2>
+
+<input id="license" placeholder="Enter License Key">
+<button onclick="checkLicense()">Verify License</button>
+
+<br><br>
+
+<input id="token" placeholder="Enter Deriv API Token">
+
+<br><br>
+
+<select id="symbol">
+    <option value="R_100">Volatility 100</option>
+    <option value="R_50">Volatility 50</option>
+</select>
+
+<br><br>
+
+<button id="startBtn" onclick="startBot()" disabled>Start Bot</button>
+
+<pre id="log"></pre>
+
+<script src="bot.js"></script>
+</body>
+</html>
